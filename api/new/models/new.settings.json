@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "name": "new",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "CompanyNews",
+        "MediaReports"
+      ],
+      "default": "CompanyNews"
+    },
+    "article": {
+      "type": "richtext"
+    }
+  }
+}
