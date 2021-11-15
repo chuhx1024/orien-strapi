@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-to-sees",
+      "handler": "order-to-see.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-to-sees/count",
+      "handler": "order-to-see.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-to-sees/:id",
+      "handler": "order-to-see.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-to-sees",
+      "handler": "order-to-see.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-to-sees/:id",
+      "handler": "order-to-see.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-to-sees/:id",
+      "handler": "order-to-see.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

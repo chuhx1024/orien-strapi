@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_to_sees",
+  "info": {
+    "name": "orderToSee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string"
+    },
+    "identityCardId": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "YL01",
+        "YL02",
+        "YL03"
+      ]
+    }
+  }
+}

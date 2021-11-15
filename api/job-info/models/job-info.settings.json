@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_infos",
+  "info": {
+    "name": "jobInfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    }
+  }
+}
